@@ -18,7 +18,7 @@ ip = urllib2.urlopen(IP_SERVICE).read()
 
 try:
     ret = linode.domain_resource_update(DomainID=DOMAIN_ID, ResourceID=RESOURCE_ID, Target=ip)
-    log.info(ret)
+    logging.info(ret)
     print 'Done.'
 except api.ApiError as e:
   logging.error(e)
