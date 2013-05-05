@@ -6,7 +6,7 @@ from linode import api
 logging.basicConfig(format='%(levelname)s %(asctime)s: %(message)s', filename='dyndns.log', level=logging.INFO)
 
 try:
-  from config import LINODE_API_KEY, DOMAIN_ID, RESOURCE_ID, IP_SERVICE
+    from config import LINODE_API_KEY, DOMAIN_ID, RESOURCE_ID, IP_SERVICE
 except ImportError as e:
     logging.error(e)
     print 'MISSING CONFIG! Please see config.py.example for how to configure this script.'
@@ -21,8 +21,5 @@ try:
     logging.info(ret)
     print 'Done.'
 except api.ApiError as e:
-  logging.error(e)
-  print 'Ooops! Something went wrong. Please see logfile.'
-  
-
-
+    logging.error(e)
+    print 'Ooops! Something went wrong. Please see logfile.'
