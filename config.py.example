@@ -1,0 +1,5 @@
+LINODE_API_KEY='abc123acb123acb123'
+DOMAIN_ID='123123'
+RESOURCE_ID='456456'
+
+IP_SERVICE = 'http://ip.42.pl/raw'
