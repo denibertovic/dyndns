@@ -15,7 +15,7 @@ Use `virtualenvwrapper` and `pip` to get things running.
     NOTE: You can use the default IP_SERVICE or change it to some other service.
     Just be sure it only returns the ip address as a string.
 
-    `Run it:` python dyndns.py
+    Run it: python dyndns.py
 
 ## Requirements
   *  `python >= 2.7` 
